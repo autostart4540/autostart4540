@@ -4,29 +4,44 @@ body {
   font-family: Arial, sans-serif;
   background-color: #002F6C;
   color: #F9C846;
-  line-height: 1.6;
 }
 header, footer {
   text-align: center;
-  padding: 40px 20px;
+  padding: 2rem 1rem;
 }
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
-  padding: 20px;
+  padding: 1rem;
 }
-h1 { font-size: 2.5em; margin-bottom: 0; }
-h2 {
-  border-bottom: 2px solid #F9C846;
-  padding-bottom: 10px;
-  margin-top: 40px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
 }
-a {
-  color: white;
-  text-decoration: underline;
+.card {
+  background: #003366;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.annonces, .contact {
+  text-align: center;
+  margin-top: 3rem;
+}
+.annonces .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #F9C846;
+  color: #002F6C;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
 }
 footer {
   border-top: 1px solid #F9C846;
-  font-size: 0.9em;
-  margin-top: 60px;
+  margin-top: 4rem;
+  font-size: 0.9rem;
 }
