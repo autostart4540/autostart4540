@@ -1,47 +1,79 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #002F6C;
   color: #F9C846;
 }
-header, footer {
+a {
+  color: #002F6C;
+  text-decoration: none;
+}
+.hero {
+  background: #001f47;
+  color: #F9C846;
+  padding: 3rem 1rem;
   text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero .cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background: #F9C846;
+  color: #002F6C;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.section {
   padding: 2rem 1rem;
-}
-h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-main {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-  padding: 1rem;
 }
-.cards {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
 }
 .card {
   background: #003366;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-.annonces, .contact {
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.vehicle {
+  background: #003366;
+  padding: 1rem;
+  border-radius: 10px;
   text-align: center;
-  margin-top: 3rem;
 }
-.annonces .btn {
+.vehicle img {
+  width: 100%;
+  border-radius: 8px;
+}
+.cta {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #F9C846;
+  background: #F9C846;
   color: #002F6C;
-  padding: 0.7rem 1.5rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 5px;
   font-weight: bold;
-  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+  margin-top: 2rem;
 }
 footer {
+  text-align: center;
   border-top: 1px solid #F9C846;
-  margin-top: 4rem;
-  font-size: 0.9rem;
+  padding: 1rem;
+  margin-top: 3rem;
 }
